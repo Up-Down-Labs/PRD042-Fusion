@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <style>
+            body{background-color: #FAA0A0;}
+            p.s1{
+                color: teal ;
+                font-size: 150%;
+            }
+            p.s2{
+                color: red;
+                font-size: 150%;
+            }
+            p.s3{
+                color: darkcyan ;
+                font-size: 150%;
+            }
+            p.s4{
+                color:chocolate;
+                font-size: 150%;
+            }
+            :is(.Satisfied, .Average, .Not Satisfied) p{
+                background-color: #fff1c9;
+                border-radius: 1rem;
+                font-size: 3rem;
+                padding: 1.6rem 2.4rem;
+                cursor: pointer;
+                margin-bottom: 1.2rem;
+                transition: all .3s linear;
+            }
+        </style>
+        <TITLE> FEEDBACK FORM </TITLE>
+        </HEAD>
+        <BODY>
+        <FORM NAME=”FEEDBACK” METHOD=”POST” ACTION=”FEEDBACK.PHP>
+        <H3 ALIGN=CENTER> <b><i> PERSONAL INFORMATION </i></b> </H3>
+        <TABLE CELLSPACING=5 CELLPADDING=5% ALIGN=CENTER>
+        <TR>
+        <TD ALIGN=LEFT><b><p class = "s1">STUDENT NAME:</TD></b></p>
+        <TD><TEXTAREA ROWS=2 COLS=20 NAME="STUNAME"></TEXTAREA></TD>
+        </TR>
+        <TR>
+        <TD ALIGN=LEFT><b><p class = "s2">EMAIL ID:</b></TD></p>
+        <td><TEXTAREA ROWS=2 COLS=20 NAME="EMAIL"></TEXTAREA></td>
+        </TR>
+        <TR>
+            <TD ALIGN=LEFT><b><p class = "s3">PHONE NUMBER:</TD></b></p>
+            <TD><TEXTAREA ROWS=1 COLS=20 NAME="PHONE"></TEXTAREA></TD>
+        </TR>
+        <TR>
+        <TD ALIGN="LEFT"><b><p class = "s4">COMMENT SECTION: </b></TD></p>
+        <TD><TEXTAREA ROWS=3 COLS=30 NAME="FEEDBACK"></TEXTAREA>
+        <p> enter your feedback in the above box </p></TD>
+        </Tr>
+        <tr>
+            <td ALIGN=LEFT><section class="feedback-section">
+            <h2>Would you like to rate our services? 🤔</h2></TD>
+            <TD><div class=" rating">
+                <div class="Satisfied">
+                    <p>😀<br> Satisfied
+                    </p>
+                    <input type = RADIO name="button" value="Satisfied"> Satisfied
+                </div></td>
+                <td><div class="Average">
+                    <p>😶<br> Average </p>
+                    <input type = RADIO name="button" value="Average"> Average
+                </div></td>
+                <td><div class="Not Satisfied">
+                    <p>🥲<br> Not Satisfied </p>
+                    <input type = RADIO name="button" value="NotSatis"> Not Satisfied
+                </div></td>
+            </div>
+        </TD>
+    </tr>
+    
+        </section>
+</html>
